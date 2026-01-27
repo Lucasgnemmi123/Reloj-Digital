@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Seguridad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background-animated"></div>
+    
+    <div class="main-container">
+        <!-- Header con logos -->
+        <header class="header">
+            <div class="logo-left">
+                <img src="logo1.png" alt="Logo 1" class="logo-img" onerror="this.style.display='none'">
+            </div>
+            
+            <div class="logo-right">
+                <img src="logo2.png" alt="Logo 2" class="logo-img" onerror="this.style.display='none'">
+            </div>
+        </header>
+
+        <!-- Contenido principal -->
+        <div class="content-wrapper">
+            <!-- Lado izquierdo: Reloj, Lema y Hitos -->
+            <div class="left-panel">
+                <!-- Reloj digital -->
+                <div class="clock-section">
+                    <div class="clock-display">
+                        <div class="time-box">
+                            <span id="horas" class="time-digit">00</span>
+                        </div>
+                        <span class="time-separator">:</span>
+                        <div class="time-box">
+                            <span id="minutos" class="time-digit">00</span>
+                        </div>
+                        <span class="time-separator">:</span>
+                        <div class="time-box">
+                            <span id="segundos" class="time-digit">00</span>
+                        </div>
+                    </div>
+                    <div class="date-display" id="fecha"></div>
+                </div>
+                
+                <div class="slogan-container">
+                    <div class="slogan-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h1 class="slogan">LA SEGURIDAD ES LO PRIMERO</h1>
+                </div>
+                
+                <!-- Barra de Hitos -->
+                <div class="milestones-container">
+                    <div class="milestones-header">
+                        <h3 class="milestones-title">
+                            <i class="fas fa-trophy"></i> HITOS DE SEGURIDAD
+                        </h3>
+                        <div class="next-milestone">
+                            Próximo: <span id="next-milestone-years">4</span> años
+                        </div>
+                    </div>
+                    <div class="milestones-bar">
+                        <div class="milestones-progress" id="milestones-progress"></div>
+                        <div class="milestones-markers" id="milestones-markers"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lado derecho: Contadores y Sin Accidentes -->
+            <div class="right-panel">
+                <!-- Contador de días totales destacado -->
+                <div class="total-days-container">
+                    <div class="total-days-label">DÍAS TOTALES</div>
+                    <div class="total-days-counter" id="dias-totales">0</div>
+                </div>
+
+                <!-- Desglose detallado -->
+                <div class="breakdown-section">
+                    <div class="breakdown-item">
+                        <div class="breakdown-number" id="anos">0</div>
+                        <div class="breakdown-label">AÑOS</div>
+                    </div>
+                    <div class="breakdown-divider"></div>
+                    <div class="breakdown-item">
+                        <div class="breakdown-number" id="meses">0</div>
+                        <div class="breakdown-label">MESES</div>
+                    </div>
+                    <div class="breakdown-divider"></div>
+                    <div class="breakdown-item">
+                        <div class="breakdown-number" id="dias-solo">0</div>
+                        <div class="breakdown-label">DÍAS</div>
+                    </div>
+                </div>
+                
+                <!-- Título SIN ACCIDENTES -->
+                <div class="title-section">
+                    <h2 class="main-title">SIN ACCIDENTES</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel de control (oculto por defecto, visible al hacer doble clic) -->
+        <div class="control-panel" id="controlPanel">
+            <div class="control-header">
+                <h3>Panel de Control</h3>
+                <button class="close-btn" id="closePanel">×</button>
+            </div>
+            <div class="control-content">
+                <label for="fechaAccidente">Fecha del último accidente:</label>
+                <input type="date" id="fechaAccidente">
+                <button id="cambiarFecha">Actualizar Fecha</button>
+            </div>
+        </div>
+        
+        <!-- Botón para abrir panel de control -->
+        <button class="toggle-panel-btn" id="togglePanelBtn">
+            <i class="fas fa-cog"></i> Configuración
+        </button>
+    </div>
+
+    <script src="script1.js"></script>
+    <script src="scriptrel.js"></script>
+</body>
+</html>

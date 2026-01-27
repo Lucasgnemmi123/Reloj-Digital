@@ -1,0 +1,10 @@
+@keyframes parpadeo {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Estilo para la hora con animación de parpadeo */
+.hora {
+    animation: parpadeo 1s infinite; /* Animación de parpadeo */
+}

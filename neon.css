@@ -1,0 +1,19 @@
+/* Estilo para el recuadro con efecto de neón rojo */
+.recuadro {
+    background: #FFCC00; /* Fondo amarillo */
+    border: 2px solid #D40511; /* Borde rojo */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 40px; /* Padding ajustado */
+    text-align: center;
+    box-shadow: 0 0 20px #D40511; /* Efecto de neón rojo */
+}
+
+/* Estilo para los bloques de tiempo con efecto de neón rojo */
+.hora, .minuto, .segundo {
+    color: #D40511; /* Color rojo */
+    font-size: 80px; /* Tamaño ajustado */
+    font-weight: bold;
+    text-shadow: 0 0 10px #D40511, 0 0 20px #D40511; /* Efecto de neón con sombra */
+    -webkit-text-stroke: 1px #000000; /* Borde negro */
+    text-stroke: 1px #000000; /* Compatibilidad con otros navegadores */
+}
