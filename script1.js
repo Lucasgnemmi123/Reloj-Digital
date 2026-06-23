@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // FECHA FIJA PARA EL INICIO DEL CONTEO DE DÍAS SIN ACCIDENTES
     // Cambia esta fecha por la fecha del último accidente
-    let startDate = new Date('2023-01-25T17:00:00'); // Formato: YYYY-MM-DDTHH:mm:ss
+    let startDate = new Date('2026-05-13T11:00:00'); // Formato: YYYY-MM-DDTHH:mm:ss
 
     // Asignar la fecha al input
     document.getElementById('fechaAccidente').value = startDate.toISOString().split('T')[0];
